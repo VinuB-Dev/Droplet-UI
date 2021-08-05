@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+.btn {
+  background-color: greenyellow;
+  color: rebeccapurple;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.modal {
+  position: fixed;
+  bottom: 50vh;
+  right: 70vh;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.close-btn {
+  /* display: inline; */
+  display: inline-block;
+}
+
+.modal-heading {
+  display: inline-block;
+}
+
+.modal-content {
+  margin-top: 1rem;
+}
+
+.modal-display {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 1rem;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+}
+
+.modal-display-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.close-btn-display {
+  font-size: larger;
+  position: relative;
+  left: 20rem;
+}
+
+.close-btn-display:hover {
+  color: black;
+  cursor: pointer;
+}
+.modal-heading-display {
+  display: inline-block;
+}
+
+.modal-content-display {
+  margin-top: 1rem;
+}
