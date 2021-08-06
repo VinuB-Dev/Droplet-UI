@@ -11,6 +11,7 @@ import Sidebar from '../components/Sidebar'
 import Modal from '../components/Modal/Modal'
 import Carousel from '../components/Carousel/Carousel'
 import { useButton } from '../Context/ButtonContext'
+import Loader from '../components/Loader/Loader'
 
 export default function Components() {
   const { buttonId } = useButton()
@@ -27,6 +28,7 @@ export default function Components() {
       {buttonId === 8 && <Toast />}
       {buttonId === 9 && <Modal />}
       {buttonId === 10 && <Carousel />}
+      {buttonId === 11 && <Loader />}
     </div>
   )
 }

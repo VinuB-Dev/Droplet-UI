@@ -107,6 +107,16 @@ export default function Avatar() {
             Carousel
           </button>
         </li>
+        <li>
+          <button
+            className='link_btn-side-bar'
+            onClick={() => {
+              setButtonId(11)
+            }}
+          >
+            Loader
+          </button>
+        </li>
       </ul>
     </div>
   )
