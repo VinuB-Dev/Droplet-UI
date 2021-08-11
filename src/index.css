@@ -230,13 +230,27 @@ a:visited {
   overflow-wrap: break-word;
 }
 
-iframe {
+/* iframe {
   width: 100%;
   height: 180px;
   border: none;
   transform: scale(1);
-  overflow: hidden;
+  overflow: scroll;
   padding: 1rem;
+}
+
+.iframe-container {
+  overflow: hidden;
+  position: relative;
+} */
+
+iframe {
+  display: block;
+  height: auto;
+  width: 100%;
+  border: 0;
+  overflow-wrap: break-word;
+  margin: 1rem;
 }
 
 /* @media screen and (max-width: 800px) {
@@ -404,7 +418,7 @@ iframe {
   height: 26.625rem;
   text-align: center;
   margin-right: 20rem;
-  margin-left: 25rem;
+  margin-left: 35%;
   /* background: #f2f2f2; */
 }
 
@@ -465,7 +479,7 @@ iframe {
 
 .card2 {
   margin-bottom: 1rem;
-  margin-left: 21rem;
+  margin: auto;
   border-spacing: 0 1em;
   display: flex;
   flex-direction: column;
@@ -522,7 +536,7 @@ iframe {
   background: #1c1e26;
   color: #d1a701;
   margin: 1rem 0rem;
-  margin-left: 21rem;
+  margin: auto;
 }
 
 .card-img-with-dismiss {
@@ -555,7 +569,7 @@ iframe {
 }
 
 .card-with-text {
-  margin-left: 21rem;
+  margin: auto;
   margin-bottom: 1rem;
   max-width: 20rem;
   background-color: #312e81;
@@ -648,4 +662,103 @@ iframe {
   font-weight: 800;
   font-size: xx-large;
   color: var(--primary);
+}
+
+.expand-tool {
+  display: none;
+}
+
+.desktop-mode {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .card1 {
+    width: 0rem;
+    height: 26.625rem;
+    text-align: center;
+    margin-left: 20%;
+    /* background: #f2f2f2; */
+  }
+
+  .card2 {
+    margin-bottom: 1rem;
+    margin: auto;
+    border-spacing: 0 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20rem;
+    height: 26rem;
+    border-radius: 1rem;
+    background: #1c1e26;
+    color: #d1a701;
+  }
+
+  .card-with-dismiss {
+    border-spacing: 0 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20rem;
+    height: 24rem;
+    border-radius: 1rem;
+    background: #1c1e26;
+    color: #d1a701;
+    margin: 1rem 0rem;
+    margin: auto;
+  }
+
+  .card-with-text {
+    margin: auto;
+    max-width: 20rem;
+    background-color: #312e81;
+    border-radius: 2rem;
+    color: #60a5fa;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .side-bar {
+    margin: auto;
+    text-align: center;
+    border: none;
+    height: 30rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    top: 10rem;
+    z-index: 1100;
+  }
+
+  .desktop-mode {
+    display: none;
+  }
+
+  .side-bar li {
+    margin-bottom: 1rem;
+  }
+
+  .center-container-component-white-with-margin {
+    background-color: white;
+    display: inline-block;
+    margin-top: 0;
+    border-radius: 1rem;
+    width: 80%;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .expand-tool {
+    display: block;
+    height: 12rem;
+    width: 2.5rem;
+    margin: auto;
+  }
+
+  .about {
+    margin-top: 10rem;
+  }
 }

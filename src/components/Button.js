@@ -9,8 +9,12 @@ export default function Button() {
           Buttons
         </div>
         <div className='flex-stack'>
-          <button className='primary_btn-blue'>Primary Button 1</button>
-          <button className='primary_btn-yellow'>Primary Button 2</button>
+          <button className='primary_btn-blue desktop-mode'>
+            Primary Button 1
+          </button>
+          <button className='primary_btn-yellow desktop-mode'>
+            Primary Button 2
+          </button>
           <button className='secondary_btn'>Secondary Button</button>
           <a className='link_btn' href='.'>
             Link Button
@@ -18,7 +22,7 @@ export default function Button() {
           <button className='float-button'>
             <i className='fa fa-times fa-2x' aria-hidden='true'></i>
           </button>
-          <button className='float-button'>
+          <button className='float-button desktop-mode'>
             <i className='fa fa-adjust fa-2x' aria-hidden='true'></i>
           </button>
         </div>

@@ -3,7 +3,7 @@ import '../index.css'
 export default function About() {
   return (
     <div>
-      <div class='center-container-component-white-with-margin'>
+      <div class='center-container-component-white-with-margin about'>
         <div class='flex-stack-col'>
           <div class='about-heading'>Project Github Link</div>
           <div>

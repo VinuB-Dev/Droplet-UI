@@ -12,10 +12,10 @@ export default function Alert() {
           <div className='alert success'>
             Success Message <span className='close-btn'>&times;</span>
           </div>
-          <div className='alert failure'>
+          <div className='alert failure desktop-mode'>
             Failure Message <span className='close-btn'>&times;</span>
           </div>
-          <div className='alert warning'>
+          <div className='alert warning desktop-mode'>
             Warning Message <span className='close-btn'>&times;</span>
           </div>
           <div className='alert info'>

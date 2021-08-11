@@ -9,12 +9,12 @@ export default function Avatar() {
       <ComponentContainer>
         <div className='component-heading'>Avatar</div>
         <div className='flex-stack'>
-          <img className='avatar-s' src={avatar_m} alt='' />
+          <img className='avatar-s desktop-mode' src={avatar_m} alt='' />
           <img className='avatar-m' src={avatar_m} alt='' />
           <img className='avatar-l' src={avatar_m} alt='' />
           <img className='avatar-l' src={avatar_f} alt='' />
           <img className='avatar-m' src={avatar_f} alt='' />
-          <img className='avatar-s' src={avatar_f} alt='' />
+          <img className='avatar-s desktop-mode' src={avatar_f} alt='' />
         </div>
 
         <iframe

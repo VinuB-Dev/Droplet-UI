@@ -12,12 +12,41 @@ import Modal from '../components/Modal/Modal'
 import Carousel from '../components/Carousel/Carousel'
 import { useButton } from '../Context/ButtonContext'
 import Loader from '../components/Loader/Loader'
+import three_lines from '../images/menu.svg'
+import { useState } from 'react'
 
 export default function Components() {
   const { buttonId } = useButton()
+  const [modal, showModal] = useState(0)
   return (
     <div>
-      <Sidebar />
+      <img
+        className='expand-tool'
+        src={three_lines}
+        alt=''
+        onClick={() => {
+          showModal(!modal)
+        }}
+      />
+      <div
+        className='modalOverlay'
+        style={{ display: modal ? 'block' : 'none' }}
+        onClick={() => {
+          showModal(!modal)
+        }}
+      ></div>
+      <div className='desktop-mode'>
+        <Sidebar />
+      </div>
+      <div
+        className='sidebar'
+        style={{ display: modal ? 'block' : 'none' }}
+        onClick={() => {
+          showModal(!modal)
+        }}
+      >
+        <Sidebar />
+      </div>
       {buttonId === 1 && <Avatar />}
       {buttonId === 2 && <AvatarBadge />}
       {buttonId === 3 && <Alert />}
