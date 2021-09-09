@@ -16,7 +16,7 @@ export default function Button() {
             Primary Button 2
           </button>
           <button className='secondary_btn'>Secondary Button</button>
-          <a className='link_btn' href='.'>
+          <a className='link_btn' href='/components'>
             Link Button
           </a>
           <button className='float-button'>

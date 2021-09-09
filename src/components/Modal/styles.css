@@ -26,7 +26,8 @@
   display: flex;
   position: fixed;
   flex-direction: row;
-  background-color: white;
+  background-color: black;
+  color: white;
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -34,6 +35,7 @@
 .close-btn {
   /* display: inline; */
   display: inline-block;
+  color: rgba(224, 216, 216, 0.705);
 }
 
 .modal-heading {
@@ -65,8 +67,8 @@
   left: 20rem;
 }
 
-.close-btn-display:hover {
-  color: black;
+.close-btn:hover {
+  color: white;
   cursor: pointer;
 }
 .modal-heading-display {
